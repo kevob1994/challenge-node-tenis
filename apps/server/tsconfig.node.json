@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Node API",
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "target": "es2016",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "module": "commonjs",
+    "strictPropertyInitialization": false,
+    "outDir": "./build"
+  },
+  "exclude": ["dist", "build", "node_modules"]
+}

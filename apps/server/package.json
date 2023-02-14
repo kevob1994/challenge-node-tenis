@@ -7,7 +7,7 @@
     "dev": "ts-node-dev --respawn src/index.ts",
     "build": "tsc && tsc-alias",
     "tsc": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1",
+		"typeorm": "typeorm-ts-node-esm",
     "migrate:run": "pnpm typeorm migration:run -d src/db.ts"
   },
   "author": "",
