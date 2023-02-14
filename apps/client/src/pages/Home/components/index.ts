@@ -1,0 +1,1 @@
+export { InfoTournament } from './InfoTournament';

@@ -1,22 +1,62 @@
-# Challenge torneos tenis
+# Challenge Node Tenis Monorepo
 
-En [esta sheet](https://docs.google.com/spreadsheets/d/1GZu4w8_NiJS8I1--C-N5O2dPoj_Bv-ojekMRDS2ToMQ/edit#gid=1490274874) vas a encontrar todos los torneos de tenis que se jugaron desde 1877.
+This mono repo was built with `TurboRepov1.4` + `Vitev3` + `Reactv18` + `Typescriptv4`.
 
-Usando la [api de google sheets](https://developers.google.com/sheets/api/) te pedimos que nos digas de cada [Grand Slam](https://es.wikipedia.org/wiki/Grand_Slam_(tenis)), quién es el jugador que mas veces lo ganó y cuando haces un click sobre el jugador te diga cuando fue la ultima vez que lo ganó.
-El diseño te lo dejamos para vos :)
+## REQUIREMENTS
+
+1. [NVM](https://github.com/nvm-sh/nvm)
+2. node 16.15
+3. npm 8.11.0
+4. pnpm 7.21.0
+
+4. `pnpm i`
+5. `pnpm build`
+6. `pnpm run dev --filter server` (in case that you want to run server)
+7. `pnpm run dev --filter client` (in case that you want to run front)
+7. `pnpm run dev` (in case that you want to run both Back and Front)
+
+## What's inside?
+
+This turborepo uses [pnpm](https://pnpm.io) as a packages manager. It includes the following packages/apps:
+
+### Apps and Packages
+
+-   `client`: a [Vite-React](https://vitejs.dev/) app
+-   `server`: a [Express.js](https://expressjs.com/es/) app
 
 
-### Consignas y Tips
+### Utilities
 
-* Resolvelo en desarrollando una API REST en Node Js.
-* La resolución debe ser un fork de este repo (Se evalúa el uso de GIT).
-* El frontend nos gustaría verlo en React (o cualquier framework similar).
-* No uses el nombre del Grand Slam como indentificador. Si le prestas atención al excel hay otra forma :).
 
-### BONUS
+- [Node](https://nodejs.org/es/)
+- [Express](https://expressjs.com/es/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Passport](https://www.passportjs.org/)
+- [TypeORM](https://typeorm.io/)
+- [Postgres](https://www.postgresql.org/)
+- [React](https://es.reactjs.org/)
+- [Tailwind](https://tailwindcss.com/)
+- [Axios](https://axios-http.com/docs/intro)
+- [React Query](https://react-query-v3.tanstack.com/)
 
-* Desarrollá un script que permita ejecutar la aplicación (Back y Front) como si fuera un deploy y dar instrucciones de su ejecución.
+## Setup
 
-### El extra mile
+This repository is used in the `turbo@latest` command, and selected when choosing which package manager you wish to use with your monorepo (pnpm).
 
-Si se te ocurre alguna cosa piola para agregarle al challenge y queres hacerlo y mostrarnos nos ayudarías a mejorar este ejercicio.
+### Build
+
+To build all apps and packages, run the following command:
+
+```
+cd challenge-node-tenis
+pnpm run build
+```
+
+### Develop
+
+To develop all apps and packages, run the following command:
+
+```
+cd challenge-node-tenis
+pnpm run dev
+```
