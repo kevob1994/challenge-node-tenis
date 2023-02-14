@@ -8,7 +8,7 @@
     "emitDecoratorMetadata": true,
     "module": "commonjs",
     "strictPropertyInitialization": false,
-    "outDir": "./build"
+    "outDir": "./dist"
   },
   "exclude": ["dist", "build", "node_modules"]
 }
